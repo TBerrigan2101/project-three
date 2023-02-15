@@ -77,35 +77,38 @@ def play_game():
         return 0
 
     """
-    Validates user input to check for numbers, blank spaces, 
+    Validates user input to check for numbers, blank spaces,
     special characters and alerts user what has happened.
-    """    
+    """
+
 
 def validate_input(user_input):
-  if user_input.isnumeric():
-    print('You entered a number by accident')
-  elif user_input.isspace():
-    print('Your entry contains a blank space')
-  elif not user_input.isalpha():
-    print('Your entry must contain a letter')
-  else:
-    None
+    if user_input.isnumeric():
+        print('You entered a number by accident')
+    elif user_input.isspace():
+        print('Your entry contains a blank space')
+    elif not user_input.isalpha():
+        print('Your entry must contain a letter')
+    else:
+        None
 
     """
-    Function to run the game and collect and 
+    Function to run the game and collect and
     tally scores from each round.
-    """   
+    """
+
 
 def run_game():
-  score = 0
-  for x in range(5):
-    print('\nROUND ' + str(x + 1))
-    score += play_game()
-  print(f"\nYour total score is {score}")    
+    score = 0
+    for x in range(5):
+        print('\nROUND ' + str(x + 1))
+        score += play_game()
+        print(f"\nYour total score is {score}")
+
 
 print("Welcome to 5-5-5!")
 print("How to play:")
 print("You will have 5 attempts to guess 5 words, each containing 5 letters.")
 print("Enter a lowercase letter to see if the word contains that letter.")
 print("A wrong guess results in losing one of your 5 attempts for that word.")
-run_game()  
+run_game()
