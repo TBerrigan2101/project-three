@@ -75,3 +75,18 @@ def play_game():
     elif available_attempts == 0:
         print(f"\nHard luck! The hidden word is'{selected_word}'")
         return 0
+
+    """
+    Validates user input to check for numbers, blank spaces, 
+    special characters and alerts user what has happened.
+    """    
+
+def validate_input(user_input):
+  if user_input.isnumeric():
+    print('You entered a number by accident')
+  elif user_input.isspace():
+    print('Your entry contains a blank space')
+  elif not user_input.isalpha():
+    print('Your entry must contain a letter')
+  else:
+    None
