@@ -90,3 +90,15 @@ def validate_input(user_input):
     print('Your entry must contain a letter')
   else:
     None
+
+    """
+    Function to run the game and collect and 
+    tally scores from each round.
+    """   
+
+def run_game():
+  score = 0
+  for x in range(5):
+    print('\nROUND ' + str(x + 1))
+    score += play_game()
+  print(f"\nYour total score is {score}")    
