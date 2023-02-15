@@ -102,3 +102,10 @@ def run_game():
     print('\nROUND ' + str(x + 1))
     score += play_game()
   print(f"\nYour total score is {score}")    
+
+print("Welcome to 5-5-5!")
+print("How to play:")
+print("You will have 5 attempts to guess 5 words, each containing 5 letters.")
+print("Enter a lowercase letter to see if the word contains that letter.")
+print("A wrong guess results in losing one of your 5 attempts for that word.")
+run_game()  
