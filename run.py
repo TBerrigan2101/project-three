@@ -58,6 +58,7 @@ while available_attempts > 0:
     elif available_attempts == 0:
         print(f"\nHard luck! The hidden word is'{selected_word}'")
         return 0
+        
 
 
 def validate_input(user_input):
